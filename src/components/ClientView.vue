@@ -155,6 +155,8 @@ import RandomIconBounce from './RandomIconBounce.vue';
 import SoftwareEngineering from './SEView.vue';
 import GameEngineering from './GEView.vue';
 import PersonalProjects from './PJView.vue';
+import portraitOrig from '../assets/portrait-orig.png';
+import portraitBW from '../assets/portrait-b&w.png';
 
 export default {
   name: "ClientView",
@@ -258,15 +260,15 @@ export default {
       let width = isFull ? "100vw" : "43.3vw";
       let bgSize = "110vw";
       let bgPos = "center center";
-      let bgImg = "url('/src/assets/portrait-orig.png')";
+      let bgImg = `url('${portraitOrig}')`;
       if (!isFull) {
-        if (position === "left") { bgPos = "left center"; bgImg = "url('/src/assets/portrait-b&w.png')" }
+        if (position === "left") { bgPos = "left center"; bgImg = `url('${portraitBW}')`; }
         else if (position === "center") bgPos = "center center";
-        else if (position === "right") { bgPos = "right center"; bgImg = "url('/src/assets/portrait-b&w.png')"; }
+        else if (position === "right") { bgPos = "right center"; bgImg = `url('${portraitBW}')`; }
       }
       else {
-        if (position === "left") { bgImg = "url('/src/assets/portrait-b&w.png')" }
-        else if (position === "right") { bgImg = "url('/src/assets/portrait-b&w.png')"; }
+        if (position === "left") { bgImg = `url('${portraitBW}')`; }
+        else if (position === "right") { bgImg = `url('${portraitBW}')`; }
       }
       return {
         width,
