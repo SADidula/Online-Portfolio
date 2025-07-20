@@ -6,8 +6,8 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(),
-  routes
+  history: createWebHistory('/Online-Portfolio/'), // 👈 This is essential
+  routes,
 })
 
 export default router
