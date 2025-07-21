@@ -6,7 +6,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory('/Online-Portfolio/'), // 👈 This is essential
+  history: createWebHistory('/'), // 👈 This is essential
   routes,
 })
 
